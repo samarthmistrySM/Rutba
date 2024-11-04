@@ -1,25 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import CarouselComponent from './components/CarouselComponent'
+import Navbar from './components/Navbar'
+import CollectionGrid from './components/CollectionGrid'
+import CollectionComponent from './components/CollectionComponent'
+import Footer from './components/Footer'
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Navbar/>
+      <CarouselComponent/>
+      <CollectionGrid/>
+      <CollectionComponent/>
+
+      <img className='mt-20' src='https://www.mohanlalsons.com/cdn/shop/files/Web_Banner_Desktop_1512x553_4a17d035-f12c-4d26-a1d9-cf1846a8945d_3350x.jpg?v=1701099378' alt='s' />
+
+      <Footer/>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
